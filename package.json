@@ -1,0 +1,24 @@
+{
+  "name": "cl_tictactoe",
+  "version": "1.0.0",
+  "description": "Command-Line Tic-Tac-Toe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RudyRed/cl_ticTacToe.git"
+  },
+  "author": "William Gross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RudyRed/cl_ticTacToe/issues"
+  },
+  "homepage": "https://github.com/RudyRed/cl_ticTacToe#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "prompt": "^1.0.0"
+  }
+}
