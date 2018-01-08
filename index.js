@@ -1,6 +1,5 @@
 const prompt = require('prompt');
 const colors = require('colors');
-console.log('sadas')
 
 let matrix;
 let board;
@@ -58,7 +57,6 @@ const player1Move = function() {
   for (let row of matrix) {
     console.log(row)
   }
-  // console.log(matrix)
   console.log('Player 1 enter:');
   prompt.get(['rowIndex', 'columnIndex'], function(err, results) {
     if (Number(results.columnIndex) > 2 || results.rowIndex > 2) {
@@ -70,7 +68,9 @@ const player1Move = function() {
       console.log('YES');
       matrix[results.rowIndex][results.columnIndex] = 1;
       if (checkBoard(1)) {
-        console.log(matrix)
+        for (let row of matrix) {
+          console.log(row)
+        }
         console.log('Player1 Wins!');
         playAgain();
       } else {
@@ -113,8 +113,9 @@ const player2Move = function() {
       console.log('YES');
       matrix[results.rowIndex][results.columnIndex] = 2;
       if (checkBoard(2)) {
-        console.log(matrix)
-        console.log('Player2 Wins!');
+        for (let row of matrix) {
+          console.log(row)
+        }        console.log('Player2 Wins!');
         playAgain();
       } else {
         player1Move();
